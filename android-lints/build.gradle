@@ -1,6 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
+apply plugin: 'com.gradleup.auto.manifest'
+
+autoManifest {
+  packageName.set("com.kozaxinan")
+  replaceDashesWithDot = true
+}
+
 group='com.kozaxinan.android-lints'
 
 android {

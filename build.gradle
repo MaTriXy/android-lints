@@ -34,13 +34,6 @@ subprojects { project ->
   }
 }
 
-apply plugin: 'com.gradleup.auto.manifest'
-
-autoManifest {
-  packageName.set("com.kozaxinan")
-  replaceDashesWithDot = true
-}
-
 task clean(type: Delete) {
   delete rootProject.buildDir
 }
